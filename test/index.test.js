@@ -34,14 +34,14 @@ describe('capitalizeWords', () => {
 describe('filterActiveUsers', () => {
     test('Filters out only users who are active', () => {
         const users = [
-            {name: "Alice", isActive: true },
-            {name: "Bob", isActive: false }
+            {name: 'Alice', isActive: true },
+            {name: 'Bob', isActive: false }
         ];
 
         const result = filterActiveUsers(users);
 
         expect(result).toEqual([
-            { name: "Alice", isActive: true },
+            { name: 'Alice', isActive: true },
         ]);
     });
 });
@@ -50,8 +50,8 @@ describe('filterActiveUsers', () => {
 describe('filterActiveUsers', () => {
     test('An array of only inactive users', () => {
         const users = [
-            { name: "Alice", isActive: false },
-            { name: "Bob", isActive: false }
+            { name: 'Alice', isActive: false },
+            { name: 'Bob', isActive: false }
         ];
 
         const result = filterActiveUsers(users);
